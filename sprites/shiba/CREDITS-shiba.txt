@@ -1,0 +1,12 @@
+Shiba dog (48x48 sprite sheet)
+
+Shiba dog by Sevarihk, with eating/sniffing frames added by tapatilorenzo.
+From "[LPC] bears, deer, lions and more" (Spring 2022 LPC contest entry).
+https://opengameart.org/content/lpc-bears-deer-lions-and-more
+Original art: Sevarihk, https://aurora-sprites.wixsite.com/main
+License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Required attribution: "Shiba dog by Sevarihk (adapted by tapatilorenzo), CC-BY 4.0"
+
+Sheet layout: rows are south, west, east, north.
+Frames 1-4 in each row are the walk cycle, frames 5-8 are eating/sniffing.

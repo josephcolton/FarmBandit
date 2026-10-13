@@ -1,0 +1,6 @@
+Music (both CC0, public domain)
+
+- title.mp3: "Quaint Town" (loopable version) by neonarkade
+  https://opengameart.org/node/31877
+- night.ogg: "Crouch jumping in your walls" by Fupi
+  https://opengameart.org/node/159864

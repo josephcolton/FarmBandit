@@ -1,0 +1,94 @@
+FARM BANDIT - CREDITS
+=====================
+
+Game design and code: Joseph Colton. Code licensed under the GNU GPL v3
+(see LICENSE).
+
+Art, sound, and music come from OpenGameArt.org and other free sources.
+Thank you to every artist below. Each entry lists the license Farm Bandit
+uses it under; more detail is in the CREDITS-*.txt files next to the art.
+
+License links
+  CC0 1.0       https://creativecommons.org/publicdomain/zero/1.0/
+  CC-BY 3.0     https://creativecommons.org/licenses/by/3.0/
+  CC-BY 4.0     https://creativecommons.org/licenses/by/4.0/
+  CC-BY-SA 3.0  https://creativecommons.org/licenses/by-sa/3.0/
+  CC-BY-SA 4.0  https://creativecommons.org/licenses/by-sa/4.0/
+  OGA-BY 3.0    https://opengameart.org/content/oga-by-30-faq
+
+The art files are included unmodified as plain image files in the game
+folder (sprites), except where noted. Farm Bandit uses no DRM.
+
+
+ART
+---
+Bunny
+  Stephen "Redshrike" Challener, commissioned by Tebruno99 for PixelFarm
+  (https://bitbucket.org/tebruno99/pixelfarm). OGA-BY 3.0.
+  https://opengameart.org/content/bunny-rabbit-lpc-style-for-pixelfarm
+
+Crops
+  "[LPC] Crops" by bluecarrot16, Daniel Eddeland (daneeklu), Joshua Taylor,
+  Richard Kettering (Jetrel). Commissioned by castelonia. CC-BY-SA 3.0.
+  https://opengameart.org/content/lpc-crops
+
+Fences, tall grass, hay bales
+  "Farming tilesets, magic animations and UI elements" by Daniel Eddeland.
+  CC-BY-SA 3.0. https://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements
+
+Chicken (the rooster)
+  "LPC style farm animals" by Daniel Eddeland. CC-BY 3.0.
+  https://opengameart.org/content/lpc-style-farm-animals
+
+Shiba dog
+  Sevarihk (https://aurora-sprites.wixsite.com/main), adapted by tapatilorenzo.
+  CC-BY 4.0. https://opengameart.org/content/lpc-bears-deer-lions-and-more
+
+Rat
+  tapatilorenzo. CC0. https://opengameart.org/content/lpc-bears-deer-lions-and-more
+
+Farmer
+  Built from Universal LPC Spritesheet Character Generator layers. Recolored
+  shirt, pants, and boots. OGA-BY 3.0. Artists: bluecarrot16, JaidynReiman,
+  Benjamin K. Smith (BenCreating), Evert, Eliza Wyatt (ElizaWy), TheraHedwig,
+  MuffinElZangano, Durrani, Johannes Sjolund (wulax), Stephen Challener
+  (Redshrike), Nila122, Matthew Krohn (makrohn), Manuel Riecke (MrBeast),
+  Joe White.
+  https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator
+
+Cliffs and burrow
+  "LPC cliffs/mountains with grass top and more!" arranged by Evert, original
+  art by Lanea Zimmerman (Sharm). CC-BY-SA 3.0. https://opengameart.org/node/49295
+
+Border
+  "[LPC] Floors" by bluecarrot16, Lanea Zimmerman (Sharm), William Thompson,
+  Hyptosis, SpiderDave, Cougarmint, Stephen Challener (Redshrike), and the
+  other contributors listed in sprites/lpc-floors/lpc-floors/CREDITS-floors.txt.
+  CC-BY-SA 4.0. https://opengameart.org/content/lpc-floors
+
+Window icon
+  Made from the bunny above (Redshrike). OGA-BY 3.0.
+
+
+MUSIC (CC0)
+-----------
+"Quaint Town" by neonarkade - https://opengameart.org/node/31877
+"Crouch jumping in your walls" by Fupi - https://opengameart.org/node/159864
+
+
+SOUND (CC0)
+-----------
+Jingles, UI clicks, cloth and coin sounds by Kenney (www.kenney.nl)
+Dog barks by pauliuw - https://opengameart.org/content/dog-sounds
+Whistle, pop, munch, cluck, squawk, and squeak synthesized for Farm Bandit
+
+
+FONT
+----
+Atkinson Hyperlegible by the Braille Institute of America. SIL Open Font License 1.1.
+
+
+SOFTWARE
+--------
+Python, pygame (LGPL 2.1), SDL2, and the libraries listed in
+licenses/THIRD-PARTY-NOTICES.txt.

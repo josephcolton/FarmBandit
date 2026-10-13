@@ -1,0 +1,65 @@
+Farm Bandit - third-party software notices
+==========================================
+
+Farm Bandit is written in Python and uses the libraries below. They are
+included in the game folder as separate files. Art, sound, and music credits
+are in CREDITS.txt.
+
+Python 3
+  Copyright (c) 2001 Python Software Foundation. All rights reserved.
+  License: Python Software Foundation License (see Python-LICENSE.txt)
+  https://www.python.org/
+
+pygame 2.6.1
+  License: GNU Lesser General Public License 2.1 (see LGPL-2.1.txt)
+  Source code: https://github.com/pygame/pygame (tag 2.6.1)
+  pygame is included as separate, replaceable files (the pygame folder and
+  its DLLs inside the game's _internal folder), as the LGPL allows.
+
+SDL2, SDL2_image, SDL2_mixer, SDL2_ttf
+  Copyright (C) 1997-2024 Sam Lantinga <slouken@libsdl.org>
+  License: zlib license
+    This software is provided 'as-is', without any express or implied
+    warranty. In no event will the authors be held liable for any damages
+    arising from the use of this software.
+    Permission is granted to anyone to use this software for any purpose,
+    including commercial applications, and to alter it and redistribute it
+    freely, subject to the following restrictions:
+    1. The origin of this software must not be misrepresented; you must not
+       claim that you wrote the original software. If you use this software
+       in a product, an acknowledgment in the product documentation would be
+       appreciated but is not required.
+    2. Altered source versions must be plainly marked as such, and must not be
+       misrepresented as being the original software.
+    3. This notice may not be removed or altered from any source distribution.
+  https://www.libsdl.org/
+
+zlib - Copyright (C) 1995-2024 Jean-loup Gailly and Mark Adler. zlib license (as above).
+  https://zlib.net/
+
+libpng - Copyright (c) 1995-2024 The PNG Reference Library Authors.
+  PNG Reference Library License version 2. https://www.libpng.org/pub/png/src/libpng-LICENSE.txt
+
+FreeType - Portions of this software are copyright (C) The FreeType Project
+  (www.freetype.org). All rights reserved. Used under the FreeType License (FTL).
+  https://freetype.org/license.html
+
+libjpeg - This software is based in part on the work of the Independent JPEG Group.
+  https://ijg.org/
+
+libtiff - Copyright (c) 1988-1997 Sam Leffler, Copyright (c) 1991-1997 Silicon Graphics, Inc.
+  libtiff license (BSD-style). https://libtiff.gitlab.io/libtiff/project/license.html
+
+libwebp - Copyright (c) 2010 Google Inc. BSD 3-Clause license.
+  https://chromium.googlesource.com/webm/libwebp/+/refs/heads/main/COPYING
+
+libogg, opus, opusfile - Copyright (c) Xiph.Org Foundation and contributors. BSD 3-Clause license.
+  https://xiph.org/
+
+libmodplug - public domain. https://github.com/Konstanty/libmodplug
+
+PortMidi - Copyright (c) 1999-2000 Ross Bencina and Phil Burk, (c) 2001-2009 Roger B. Dannenberg.
+  PortMidi license (MIT-style). https://github.com/PortMidi/portmidi
+
+Atkinson Hyperlegible font - Copyright 2020 Braille Institute of America, Inc.
+  SIL Open Font License 1.1 (see OFL-AtkinsonHyperlegible.txt)

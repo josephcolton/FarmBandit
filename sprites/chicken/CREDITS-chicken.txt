@@ -1,0 +1,9 @@
+Chicken (used as the rooster)
+
+From "LPC style farm animals" by Daniel Eddeland.
+https://opengameart.org/content/lpc-style-farm-animals
+License: CC-BY 3.0 or GPL 2.0+
+Attribution: Daniel Eddeland, https://opengameart.org/content/lpc-style-farm-animals
+
+32x32 frames, 4 per row. Rows: north, west, south, east.
+chicken_walk.png is the walk cycle, chicken_eat.png is pecking.

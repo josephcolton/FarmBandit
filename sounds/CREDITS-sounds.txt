@@ -1,0 +1,18 @@
+Sound effects
+
+All sounds here are CC0 (public domain) or made for this game.
+
+- level_start, order_filled, deliver, caught, dawn, game_over, victory:
+  "85 Short music jingles" by Kenney (www.kenney.nl), CC0
+  https://opengameart.org/node/22000
+- hop1-4 (cloth), store (coins):
+  "50 RPG sound effects" by Kenney (www.kenney.nl), CC0
+  https://opengameart.org/content/50-rpg-sound-effects
+- menu_move, menu_select:
+  "51 UI sound effects" by Kenney (www.kenney.nl), CC0
+  https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks
+- bark1-3:
+  "Dog sounds" by pauliuw, CC0
+  https://opengameart.org/content/dog-sounds
+- whistle, pick, munch, cluck, squawk, squeak:
+  Synthesized for Farm Bandit by tools/make_sounds.py

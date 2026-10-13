@@ -1,0 +1,10 @@
+Rat (gray mouse, 32x32)
+
+From "[LPC] bears, deer, lions and more" by tapatilorenzo (Spring 2022 LPC entry).
+https://opengameart.org/content/lpc-bears-deer-lions-and-more
+The author releases the parts not based on Sevarihk's work (including the mice) under CC0.
+Pack license: CC-BY 4.0. Credit appreciated: tapatilorenzo.
+
+Gray mouse frames (left half of the sheet):
+row 0: crouch/eat facing east (cols 0-1), row 1: run east (cols 0-2),
+row 2: run north (cols 0-3), row 3: run south (cols 0-3). West frames are mirrored in code.

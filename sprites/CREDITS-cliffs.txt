@@ -1,0 +1,8 @@
+LPC_cliffs_grass.png
+
+"LPC cliffs/mountains with grass top and more!" by Evert
+https://opengameart.org/node/49295
+License: CC-BY-SA 3.0 or GPL 3.0 (Farm Bandit uses it under CC-BY-SA 3.0)
+Attribution: Lanea Zimmerman ("Sharm"), original author of these assets.
+(The sand in the same pack is by Daniel Eddeland and William Thompson; Farm Bandit doesn't use it.)
+Verified 2026-10-12: this file is byte-for-byte identical to the download on that page.

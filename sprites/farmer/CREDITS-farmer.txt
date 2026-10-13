@@ -1,0 +1,24 @@
+Farmer walk sheet (64x64 frames, 9 per row; rows are north, west, south, east)
+
+Built for Farm Bandit by layering pieces from the Universal LPC Spritesheet
+Character Generator (https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator).
+The shirt, pants, and boots were recolored. Each layer and its authors:
+
+- Body (male): bluecarrot16, JaidynReiman, Benjamin K. Smith (BenCreating), Evert,
+  Eliza Wyatt (ElizaWy), TheraHedwig, MuffinElZangano, Durrani, Johannes Sjölund (wulax),
+  Stephen Challener (Redshrike). OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 3.0
+- Head (human male): bluecarrot16, Benjamin K. Smith (BenCreating), Stephen Challener (Redshrike).
+  OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 3.0
+- Boots (basic): JaidynReiman, bluecarrot16, Nila122. OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 2.0 / GPL 3.0
+- Pants: bluecarrot16, JaidynReiman, ElizaWy, Matthew Krohn (makrohn), Johannes Sjölund (wulax),
+  Stephen Challener (Redshrike). OGA-BY 3.0 / GPL 3.0 / CC-BY-SA 3.0
+- Long-sleeve shirt: JaidynReiman, Johannes Sjölund (wulax). OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 3.0
+- Overalls: ElizaWy, bluecarrot16, JaidynReiman. OGA-BY 3.0 / GPL 3.0
+- Hair (plain): JaidynReiman, Manuel Riecke (MrBeast), Joe White. OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 3.0
+- Leather cap: Johannes Sjölund (wulax), Matthew Krohn (Makrohn), JaidynReiman.
+  OGA-BY 3.0 / CC-BY-SA 3.0 / GPL 3.0
+
+Every layer is offered under OGA-BY 3.0, so Farm Bandit uses this combined sheet under
+OGA-BY 3.0 (https://opengameart.org/content/oga-by-30-faq), crediting the artists above.
+(An earlier version had a beard layer that was only CC-BY-SA 3.0 / GPL 3.0; it was removed.)
+Full per-file credits: CREDITS.csv in the generator repository.
