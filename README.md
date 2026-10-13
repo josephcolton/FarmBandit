@@ -21,6 +21,11 @@ Gamepad: D-pad or stick hops, A picks, X eats, Start pauses.
 ## Release
 
     python build.py           -> dist/FarmBandit/FarmBandit.exe
+                                 dist/FarmBandit-Setup.exe (needs Inno Setup 6)
+
+The installer puts the game in Program Files, adds Start menu and optional
+desktop shortcuts, and registers an uninstaller. Install Inno Setup once with
+`winget install JRSoftware.InnoSetup`; without it only the folder is built.
 
 ## License
 

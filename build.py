@@ -6,6 +6,10 @@ Creates a private build environment (.venv-build) with pinned pygame and
 PyInstaller, then builds dist/FarmBandit/FarmBandit.exe. That whole
 dist/FarmBandit folder is the release; zip it up to share.
 
+If Inno Setup 6 is installed, it also builds dist/FarmBandit-Setup.exe, an
+installer that puts the game in Program Files with Start menu and desktop
+shortcuts and an uninstaller. Without Inno Setup that step is skipped.
+
 Only files the game actually uses are packaged: sheets named in sprites.data,
 sounds named in sound.py, the music, fonts, and every credits/license file.
 """
@@ -82,5 +86,83 @@ def build():
     print("\nBuilt %s (%d files packaged, %.1f MB)" % (os.path.join(out, app_name + ".exe"), len(files), size / 1e6))
 
 
+def findInnoSetup():
+    # ISCC.exe is the Inno Setup compiler; winget may install it machine-wide or per-user
+    found = shutil.which("iscc")
+    if found:
+        return found
+    for base in ("ProgramFiles(x86)", "ProgramFiles", "LOCALAPPDATA"):
+        root = os.environ.get(base)
+        if not root:
+            continue
+        for sub in ("Inno Setup 6", os.path.join("Programs", "Inno Setup 6")):
+            path = os.path.join(root, sub, "ISCC.exe")
+            if os.path.exists(path):
+                return path
+    return None
+
+
+def gameVersion():
+    match = re.search(r'^version = "(.+)"', open(os.path.join(here, "farmgame.py")).read(), re.M)
+    return match.group(1)
+
+
+def buildInstaller():
+    iscc = findInnoSetup()
+    if not iscc:
+        print("\nInno Setup 6 not found, so no installer was built (the dist/%s folder is still usable)." % app_name)
+        print("Install it with: winget install JRSoftware.InnoSetup")
+        return
+    script = os.path.join(here, "build", app_name + ".iss")
+    with open(script, "w") as fh:
+        fh.write(installer_script % {
+            "name": app_name,
+            "version": gameVersion(),
+            "source": os.path.join(dist, app_name),
+            "icon": os.path.join(here, "sprites", "icon.ico"),
+            "output": dist,
+        })
+    run([iscc, "/Q", script])
+    print("Built %s" % os.path.join(dist, app_name + "-Setup.exe"))
+
+
+# Inno Setup script: installs to Program Files, with Start menu and optional desktop shortcuts.
+# AppId identifies the game to Windows across versions; never change it.
+installer_script = r"""
+[Setup]
+AppId={{C243FDF9-FBA7-4698-ADA4-D9C342891E95}
+AppName=Farm Bandit
+AppVersion=%(version)s
+AppPublisher=Joseph Colton
+DefaultDirName={autopf}\%(name)s
+DefaultGroupName=Farm Bandit
+DisableProgramGroupPage=yes
+SetupIconFile=%(icon)s
+UninstallDisplayIcon={app}\%(name)s.exe
+OutputDir=%(output)s
+OutputBaseFilename=%(name)s-Setup
+Compression=lzma2
+SolidCompression=yes
+WizardStyle=modern
+PrivilegesRequired=admin
+ArchitecturesAllowed=x64compatible
+ArchitecturesInstallIn64BitMode=x64compatible
+
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
+
+[Files]
+Source: "%(source)s\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+
+[Icons]
+Name: "{autoprograms}\Farm Bandit"; Filename: "{app}\%(name)s.exe"
+Name: "{autodesktop}\Farm Bandit"; Filename: "{app}\%(name)s.exe"; Tasks: desktopicon
+
+[Run]
+Filename: "{app}\%(name)s.exe"; Description: "{cm:LaunchProgram,Farm Bandit}"; Flags: nowait postinstall skipifsilent
+"""
+
+
 if __name__ == "__main__":
     build()
+    buildInstaller()
