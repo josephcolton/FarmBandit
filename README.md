@@ -9,7 +9,9 @@ fill an order before dawn. Written in Python with pygame.
     python farmgame.py        (or double-click start.bat)
 
 Keyboard: arrows/WASD hop, Space picks a ripe crop, E eats, P or Esc pauses.
-Gamepad: D-pad or stick hops, A picks, X eats, Start pauses.
+Gamepad (SNES letters): D-pad or stick hops, B picks, A eats, Start or L/R
+pauses. While paused, B, Start or L/R resume and Select quits to the title.
+Buttons go by position, so on an Xbox pad it's A to pick and B to eat.
 
 ## Make changes
 

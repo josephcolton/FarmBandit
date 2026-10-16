@@ -184,14 +184,15 @@ class Game:
     def handleEvent(self, event):
         if event.type != pygame.KEYDOWN: return
         key = event.key
+        button = getattr(event, "button", None)   # set for gamepad presses
         if self.state == "playing":
             if key in move_keys: self.rabbit.action(move_keys[key])
             if key == pygame.K_SPACE: self.rabbit.action("grab")
-            if key == pygame.K_e: self.rabbit.action("eat")
-            if key in (pygame.K_p, pygame.K_ESCAPE): self.setState("paused")
+            if key == pygame.K_e or button == "east": self.rabbit.action("eat")
+            elif key in (pygame.K_p, pygame.K_ESCAPE) or button == "start": self.setState("paused")
         elif self.state == "paused":
-            if key in (pygame.K_p, pygame.K_ESCAPE, pygame.K_RETURN, pygame.K_SPACE): self.setState("playing")
-            if key in (pygame.K_q, pygame.K_r): self.app.toTitle()
+            if key == pygame.K_q or button == "back": self.app.toTitle()
+            elif key in (pygame.K_p, pygame.K_ESCAPE, pygame.K_RETURN, pygame.K_SPACE): self.setState("playing")
         elif self.state == "intro":
             if key in (pygame.K_RETURN, pygame.K_SPACE):
                 self.sound.play("level_start")
@@ -376,7 +377,7 @@ class Game:
                 "Press Enter to start",
             ])
         if self.state == "paused":
-            self.hud.drawOverlay(["Paused", "P, Esc, or Start: keep playing", "Q or Y: quit to the title screen"])
+            self.hud.drawOverlay(["Paused", "P, Esc, Enter, B, Start, L or R: keep playing", "Q or Select: quit to the title screen"])
         if self.state == "caught":
             self.hud.drawOverlay(["Caught!", self.caughtMessage,
                                   "Lives left: %d" % self.lives])
@@ -465,7 +466,7 @@ class App:
             events = pygame.event.get()
             events += self.gamepad.update(time)
             for event in events:
-                if event.type in (pygame.JOYDEVICEADDED, pygame.JOYDEVICEREMOVED, pygame.JOYBUTTONDOWN):
+                if event.type in gamepad.events:
                     event = self.gamepad.handleEvent(event)
                     if event is None: continue
                 if event.type == pygame.QUIT:

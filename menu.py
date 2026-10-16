@@ -17,7 +17,8 @@ about_lines = [
     ("How to Play", "head"),
     ("Arrows / WASD: hop     Space: pick a ripe crop", ""),
     ("E: eat a crop (ground, basket, or burrow pantry)", ""),
-    ("Gamepad: D-pad or stick to hop, A pick, X eat, Start pause", ""),
+    ("Gamepad: D-pad or stick to hop, B pick, A eat, Start pause", ""),
+    ("(SNES letters; on Xbox pads A picks and B eats)", ""),
     ("Bring crops home to fill the order before the sun comes up.", ""),
     ("Dogs and the farmer cost you a life. The farmer whistles", ""),
     ("for the dogs when he sees you. The rooster pecks you until", ""),
@@ -186,7 +187,7 @@ class TitleScreen:
             elif event.key in (pygame.K_RIGHT, pygame.K_d) and self.page == "farms":
                 self.moveSelection(farm_rows, count, wrap=False)
             elif event.key == pygame.K_ESCAPE:
-                # Esc (or the gamepad's B / Start) goes back; on the main menu it moves to Quit
+                # Esc (or the gamepad's A / Select) goes back; on the main menu it moves to Quit
                 if self.page == "main":
                     self.selected = len(self.items()) - 1
                     self.sound.play("menu_move")
