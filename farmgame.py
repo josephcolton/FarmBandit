@@ -20,7 +20,7 @@ import sound
 import display
 import gamepad
 
-version = "1.0"
+version = "1.1"
 
 # Keys for moving the bunny
 move_keys = {
